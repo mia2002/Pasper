@@ -11,7 +11,7 @@ gems: [jekyll-paginate]
 highlighter: pygments
 # 网站根路径，使用http://localhost:port/{{baseurl}}来访问网站
 # baseurl: /pasper
-baseurl: 
+baseurl:
 # 博客分页大小
 paginate: 5
 # 博客分页的路径
@@ -23,7 +23,7 @@ permalink: blog/:title
 # 博客的语言环境
 language: 'en-uk'
 # 指定端口号，本地使用jekyll s的时候，可以使用http://localhost:port来访问
-port: 4000
+port: 3000
 # 网站生成的目录路径，此路径应该在.gitignore上被勿略
 destination: _site
 
@@ -31,44 +31,44 @@ destination: _site
 # 网站信息
 ########################################################
 # 首页博客标题
-name: 'Finding The Way Home'
+name: "Welcome to Yan's Blog"
 # 首页图片
 cover: 'assets/images/cover1.jpg'
 # 博客Logo
 logo: 'assets/images/logo.png'
 # 首页博客副标题
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+description: "What wakes you up every morning is not the bell,but your dream!!"
 # 博客访问地址
-address: 'http://pasper.yerl.cn'
+address: 'http://mia2002.cn'
 # address: 'http://127.0.0.1:4000'
 
 ########################################################
 # 作者信息
 ########################################################
 # 作者名
-author: 'Casper McFadden'
+author: 'Yan'
 # 昵称
-nickname: casper
+nickname: yanyan
 # 作者简介
-bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
+bio: '一只正在学飞的小菜鸟'
 # 作者居住地
-location: 'Maine, USA'
+location: '广州，广东'
 # 作者主页
-url: 'http://yerl.cn'
+url: 'https://github.com/mia2002'
 # 头像
-image: 'assets/images/casper.png'
+image: 'assets/images/head.jpg'
 
 ########################################################
 # 评论系统
 ########################################################
 # comments_duoshuo: pasper # 多说
-comments_disqus: pasper # disqus
+comments_disqus: mia2002 # disqus
 
 ########################################################
 # 网站统计分析
 ########################################################
 #analytics_google: UA-xxxxxxxx-x
-analytics_baidu: '//hm.baidu.com/hm.js?0705c3d796ab210d7657f87eba730be2'
+#analytics_baidu: '//hm.baidu.com/hm.js?0705c3d796ab210d7657f87eba730be2'
 
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)

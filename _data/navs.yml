@@ -5,11 +5,5 @@
 - name: About
   url: "about"
   
-- name: Fables
-  url: "tag/Fables"
-  
-- name: Speeches
-  url: "tag/Speeches"
-
-- name: Fiction
-  url: "tag/Fiction"
+- name: Oracle
+  url: "tag/oracle"

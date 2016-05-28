@@ -5,8 +5,8 @@ cover: 'assets/images/cover4.jpg'
 current: about
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
+Hello，我是Yan，一只正在学飞的小菜鸟。
 
-We use this for testing and for reference!
+喜欢和男朋友讨论改变世界的事（猿猿都有一颗想改变世界的心），也喜欢带着我男朋友到处跑。
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+喜欢过着充实的生活。
