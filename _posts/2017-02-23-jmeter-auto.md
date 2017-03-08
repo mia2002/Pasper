@@ -1,11 +1,9 @@
 ---
 layout: post
 date: 2017-02-23
-title: JMeter Auto
+title: JMeter接口自动化测试
 tags: JMeter
 ---
-
-# JMeter接口自动化测试
 
 ## 1 引言
 
