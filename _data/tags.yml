@@ -3,6 +3,10 @@
   cover: assets/images/cover4.jpg
   description: Oracle
 
-- name: java
+- name: Java
   cover: assets/images/cover1.jpg
   description: Java
+
+- name: JMeter
+  cover: assets/images/cover2.jpg
+  description: JMeter

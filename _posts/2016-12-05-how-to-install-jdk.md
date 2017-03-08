@@ -2,7 +2,7 @@
 layout: post
 date: 2016-12-05
 title: How to install JDK
-tags: java
+tags: Java
 ---
 
 # Ubuntu
