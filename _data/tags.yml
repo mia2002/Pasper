@@ -2,3 +2,7 @@
 - name: Oracle
   cover: assets/images/cover4.jpg
   description: Oracle
+
+- name: java
+  cover: assets/images/cover1.jpg
+  description: Java
