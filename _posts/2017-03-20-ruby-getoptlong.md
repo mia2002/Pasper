@@ -29,19 +29,18 @@ def display_usage
 	p "ruby getoptlong.rb -d tmp -n 3 -f 'test.txt'"
 end
 
-def parse_arguments
-	opts.each do |opt,arg|
-		case opt
-		when '--dir'
-			dir=arg
-		when '--num'
-			num=arg.to_i
-		when '--file'
-			test_file=arg
-		end
+#parse arguments
+opts.each do |opt,arg|
+	case opt
+	when '--dir'
+		dir=arg
+	when '--num'
+		num=arg.to_i
+	when '--file'
+		test_file=arg
 	end
 end
-
+	
 # print all the arguments
 puts "dir=#{dir},num=#{num},file=#{test_file}"
 ```
