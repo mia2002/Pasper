@@ -10,3 +10,7 @@
 - name: JMeter
   cover: assets/images/cover2.jpg
   description: JMeter
+
+- name: Ruby
+  cover: assets/images/cover5.jpg
+  description: Ruby
