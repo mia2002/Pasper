@@ -498,7 +498,48 @@ require 'yn_server'
 
 5.发布gem包
 
+我们可以把包发布到rubygems.org，这样其他人在引用我们的gem包时就可以直接使用`gem install`来安装。
 
+1）首先得先到[https://rubygems.org](https://rubygems.org)注册帐号，并完成邮件激活帐号。
+
+2）命令行push gem
+
+```ruby
+gem push yn_server-0.1.gem
+```
+
+![](../assets/ruby/socket-server-2.png)
+
+等几分钟后，可以在rubygems.org上搜索到刚push的gem包信息。
+
+![](../assets/ruby/socket-server-3.png)
+
+3）命令行gem install
+
+接下来，其他人要使用这个gem包，就可以直接打开终端输入命令：
+
+```ruby
+sudo gem install yn_server
+```
+![](../assets/ruby/socket-server-4.png)
+
+4)执行gem包
+
+使用`YNServer.start(port)`启动服务，参数端口可不传，不带参数时默认端口号为2000。
+
+![](../assets/ruby/socket-server-5.png)
+
+打开浏览器输入地址：
+
+http://localhost:2000/RubyServer/hello?name=yan&pwd=123
+
+执行结果：
+
+![](../assets/ruby/socket-server-6.png)
+
+终端结果：
+
+![](../assets/ruby/socket-server-7.png)
 
 ### 6 心得体会
 
