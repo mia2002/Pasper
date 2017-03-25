@@ -369,6 +369,7 @@ end
 - 返回响应文给请求客户端
 
 ```ruby
+
 require 'yn_socket_queue'
 require 'yn_request'
 require 'yn_task'
@@ -386,11 +387,10 @@ class YNHandleRequest
 		loop do
 			begin
 				client = @socket_queue.take
+				puts "-----------------------------------"
 				_method,path = client.gets.split
-				if (path=~/.+\.(png|ico|gif)/) != nil
-					client.close
-					next
-				end
+				puts "url: #{path}"
+				puts "method: #{_method}"
 				headers={}
 				while line = client.gets.split(' ',2)
 					break if line[0]==""
@@ -411,12 +411,13 @@ class YNHandleRequest
 						servlet_url = path
 					end
 				end
-
 				request = YNRequest.new(data)
+				puts "parameter: #{request.hash}"
 				util = YNRouteUtil.new
 				route = util.get_method(servlet_url)
 				task = YNTask.new(request)
 				route = "default" if route == nil || route.empty?
+				puts "route: #{route}"
 				_result = task.send(route) #动态执行方法
 				client.write(_result)
 			
