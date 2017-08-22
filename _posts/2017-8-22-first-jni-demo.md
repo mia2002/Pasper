@@ -13,6 +13,8 @@ tags: Android
 
 **配置ndk-build的环境变量**
 
+**Windows环境变量配置**
+
 1. 新建系统变量
 
 ![](../assets/blog/20170822-2.png)
@@ -26,6 +28,23 @@ tags: Android
 ![](../assets/blog/20170822-4.png)
 
 看到如图所示提示，即表示环境变量配置成功。
+
+**Mac环境变量配置**
+
+1. 使用vim或者nano修改~/.bash_profile文件，添加ndk-build路径。
+
+```ruby
+nano ~/.bash_profile
+```
+
+![](../assets/blog/20170822-10.png)
+
+添加完点击control+x保存文件。
+
+2. 使用`source .bash_profile`命令应用刚添加的配置
+3. 使用`ndk-build`检测是否已配置成功
+
+![](../assets/blog/20170822-11.png)
 
 ## 添加jni目录
 
