@@ -14,3 +14,7 @@
 - name: Ruby
   cover: assets/images/cover5.jpg
   description: Ruby
+
+- name: Android
+  cover: assets/images/cover2.jpg
+  description: Android
