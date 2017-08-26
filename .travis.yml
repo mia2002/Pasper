@@ -1,25 +1,31 @@
-sudo: false
 language: ruby
-cache: bundler
 rvm:
-#- 2.1
-- 2.1.1
+- 2.3.1
+
+branches:
+  only:
+    - master
+
+before_install:
+- git clone https://github.com/alan-yeh/CI.git
+- cp CI/jekyll/* ./
+- rm -rf CI
+- rm example.travis.yml
 
 install:
-  # Install Jekyll and dependencies
-  - bundle install
+- bundle install
 
-script: bundle exec rake site:deploy --quiet #--trace
+script: bundle exec rake site:deploy --quiet
 
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page
 # gem install travis
 # GH_TOKEN from https://github.com/settings/tokens
-# travis encrypt 'GIT_NAME="YOUR_NAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
 env:
   global:
-    secure: "yWvvXbVR2MRv96zTTDekZ3c6qKq1kAeyeOWcyzf0vBl3Mv3vDXxfwsLhtGUF6cbABHYfmR488ZpkVDUNR1xA96s2ULsxIfk8tcFdkgR2JxraVeKAottdyQ7wDR2Hg4azqC6hWLtlaZC2fUMytFyns23kJBvJLTUFvmwTJEuU19AY5Juy04K8Xl2+TDZvkPQDEycWWmT7RhXpGi2wq79i6wAfmJY7iNDvKsjrqwSv7/jW1sW2WcAypCZDL1bAqyIVFeKB9WxmiMAWga+b0msX7EldgdFcrx9lPJvaIEkEw1jUHtLSr3C8ufiP3e+vF7iJqLGxmjIUEhmZznVJYET6/Qn0h7CFlnKAkRi3p+wiSyYTDVn/yBqgL3t3M9ona4dnH+qLllZMLOoFdwltOqN5KEzb1s0fu7RoAXK2RB7s7AoUViiTQLxOOvv1pxpY1DkTC7WokfXgADc7JSUcq+VReA5+rDFUEfS6UJhaMdcYEts/t/88hT74ywX3ai/FTSloRQTXQ+FZsbyFiJzPEz0zduJEEuQAleGRL/jNH13b6zVOpp05RfknDLTStn6XDAHlehfgmsgnxRmK4k6IHzwum9HW5FsvMHYyFvFGru+xtaBJBozpOOjCSkYEeZf4GRlRlF9JNwob7rAelhy65VK1CGdV5JlJInqRg3lCbcIJ12A="
-branches:
-  only:
-    - master
+    # travis encrypt 'GH_TOKEN=YOUR_TOKEN'
+    - secure: "P9fPI9chOhFNTD5zVNuG5cBpFzSMsCsV8l3/s1qDTe9CNbe1mlb1Go3i6ZLgRB9/OpoRpqdyk7tTgjBewAknngWhof/wJOlR+uMMc7W4thV/sTqKgE+LyUgenpjtNvDtJIBsRxBj2AZzTzdqGcPMEvfFre7/YolhkWrZ7Zh+7K6mVSndGFWj89YPPuKVM4NzckV5srMkHqHEaI+AbU2YkmUf4pB3DP2q9EuHt8E35KMUdMGomOTzO3ebWF27LB4bZd9QwOBUeX6CvLtsM9pKIkk1/QG3hrE5y2DY4ni2vDucj5i8MfeN3SToZxedKgMxumnBGBCadmhjfAjXUjLENJP4T6kWd0btbqgrNigxpQHfv9zBWa2ZHtOULdltgHzK/NKJ/Kid5pEW23HcRnhKOtHFJPdBl18bvpvD2mxH1XaV9TWBJvFVKnyE9OTumpgkd7Gab/IDmL7uy6eEmhIlCnMl/V+WbE4O6XigjwyeXSauZQkdYs3//XMLb4a/5Cg3zor1kE21B4gCiB8o/0mW7aC9OtwXongyI6eb8hAqVHbsriR5uT+3TMY58z84H1G7zXBUZAkHkmAKZvL7P8PnackW10grJe7lPBVBajjJZt67J/LzfKDm+ozmaFzwGbqjy9HZ+GsD/2FQzAIsEfW/F+ja6CvASl1QU2AxR4cp7Tg="
+    - GH_USER: mia2002
+    - GH_NAME: yan-ng
+    - GH_EMAIL: yan@yerl.cn
 
