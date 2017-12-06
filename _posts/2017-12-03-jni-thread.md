@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-12-03
-title: 原生线程
+title: POSIX线程
 tags: Android
 ---
 
