@@ -94,7 +94,7 @@ MySQL默认是使用latin1编码，他有另外一个我们大家都很熟悉的
 
 ![](../assets/blog/2018050606.png)
 
-注意：除了character\_set\_filesystem 和 character_sets_dir ，其它圈出来的几个编码均要修改为utf8。
+注意：除了character\_set\_filesystem 和 character\_sets\_dir ，其它圈出来的几个编码均要修改为utf8。
 
 同样，在MySQL中，如果没有设置编码的话，是输入不了中文字符串的。找到MySQL安装目录下的**my.cnf**或者**my.ini**，添加或者修改以下内容：
 
